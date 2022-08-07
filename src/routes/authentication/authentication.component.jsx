@@ -1,11 +1,12 @@
 import {signWithGooglePopup,createUserDocumentFrom} from '../../utils/firebase/firebase.utils';
 import SignUpForm from '../../components/sign-up -form/sign-up-form.component';
+import SignInForm from '../../components/sign-in-form.component/sign-in-form.component';
 
 
 
 //compare password before API call with form , inside onSubmit of the form : {values.password === values.confirmPassword}?
 
-const SignIn = () => {
+const Authentication = () => {
 
     
     const logGoogleUser = async () => {
@@ -16,11 +17,11 @@ const SignIn = () => {
     return(
         <div>
             <h1>Sign in</h1>
-            <button onClick={logGoogleUser}> Login in</button>
-            <hr />
+            {/* <button onClick={logGoogleUser}> Login in</button> */}
+            <SignInForm/>
             <SignUpForm/>
         </div>
     )
 }
 
-export default SignIn;
+export default Authentication;
