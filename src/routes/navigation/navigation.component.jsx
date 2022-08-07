@@ -20,7 +20,7 @@ const Navigation = () => {
             SHop
         </Link>
         <Link className='nav-link' to='/sign-in'>
-            Sign in
+            Sign In
         </Link>
         </div>
       </div>
